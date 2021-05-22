@@ -1,8 +1,33 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App";
+import Heading from "./components/Heading";
+import contacts from "./contacts";
+import Card from "./components/Card";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <div>
+    <Heading />
+    <Card
+      name={contacts[0].name}
+      img={contacts[0].imgURL}
+      phone={contacts[0].phone}
+      email={contacts[0].email}
+    />
+    <Card
+      name={contacts[1].name}
+      img={contacts[1].imgURL}
+      phone={contacts[1].phone}
+      email={contacts[1].email}
+    />
+    <Card
+      name={contacts[2].name}
+      img={contacts[2].imgURL}
+      phone={contacts[2].phone}
+      email={contacts[2].email}
+    />
+  </div>,
+  document.getElementById("root")
+);
 
 //1. Apply CSS styles to App.jsx component
 //to match the appearance on the completed app:
