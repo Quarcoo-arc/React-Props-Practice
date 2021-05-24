@@ -6,6 +6,7 @@ function Card(props) {
   return (
     <div className="card">
       <div className="top">
+        <p id="id">{props.id}</p>
         <h2 className="name">{props.name}</h2>
         <Image img={props.img} />
       </div>

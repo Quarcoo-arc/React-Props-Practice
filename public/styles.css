@@ -42,7 +42,7 @@ body {
   color: #2d3436;
   display: flex;
   flex: 1;
-  margin: 10% 20px 0;
+  margin: 10% 16px 0;
 }
 
 .card img {
@@ -63,4 +63,9 @@ body {
 .info {
   margin: 20px 0;
   color: #1a7e76;
+}
+
+#id {
+  padding: 0px;
+  margin: 0px;
 }
